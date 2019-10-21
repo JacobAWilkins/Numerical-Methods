@@ -4,12 +4,13 @@
 Created on Mon Oct 14 18:38:50 2019
 
 @author: Jacob Wilkins
-Copyright: GNU General Public Licence
+@copyright: GNU General Public Licence
 
 Finds the least squares solution (x) to a system of equations using
 Singular Value Decomposition (A=U.sigma.V^t) regardless of A's shape or rank,
 the normal equations A^t.A.x = A^t.b, x = (A^t.A)^-1.A^t.b,
 and x=sum_i=0_to_r((u_i^t.b/sigma_i).v_i) where r is the effective rank of A.
+Finds the 2-norm of the residual vector for each.
 
 Each method results in a different value for x. The value of x used to produce b
 is x = [1, 1, 1, 1, 1, 1, 1]^t
