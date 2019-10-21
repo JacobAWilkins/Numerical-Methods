@@ -29,5 +29,5 @@ Each method results in a different value for x. The value of x used to produce b
 x = [1, 1, 1, 1, 1, 1, 1]^t
 ```
 ### Conclusion
-The condition number of AtA is very high which mean any operations that used AtA
+The condition number of A^t.A is very high which mean any operations that used A^t.A
 are ill-conditioned, thus, inaccurate. This is why the solutions of x vary so much.
